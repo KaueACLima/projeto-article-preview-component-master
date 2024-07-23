@@ -8,30 +8,39 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
 
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/font.css">
+  <link rel="stylesheet" href="./src/css/index.css">
+
   <title>Frontend Mentor | Article preview component</title>
 </head>
 
 <body>
-  <main>
-    <section>
-      <img src="./src/images/drawers.jpg" alt="Image drawers">
+  <main class="preview-component">
+
+    <section class="preview-image-component">
+      <img class="preview-image" src="./src/images/drawers.jpg" alt="Image drawers">
     </section>
 
-    <section>
-      <h1>
-        Shift the overall look and feel by adding these wonderful
-        touches to furniture in your home
-      </h1>
+    <section class="preview-information-component">
 
-      <p>
-        Ever been in a room and felt like something was missing? Perhaps
-        it felt slightly bare and uninviting. I’ve got some simple tips
-        to help you make any room feel complete.
-      </p>
+      <article class="preview-information">
+        <h1 class="title">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h1>
+  
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
+      </article>
 
-      <div>
+      <article class="preview-information-user">
         <div>
-          <img src="./src/images/avatar-michelle.jpg" alt="Photo Michelle">
+          <img class="photo-user" src="./src/images/avatar-michelle.jpg" alt="Photo Michelle">
           <p>
             <span>
               Michelle Appleton
@@ -43,8 +52,8 @@
           </p>
         </div>
 
-        <img src="./src/images/icon-share.svg" alt="Icon share">
-      </div>
+        <img class="icon-share" src="./src/images/icon-share.svg" alt="Icon share">
+      </article>
     </section>
   </main>
 
