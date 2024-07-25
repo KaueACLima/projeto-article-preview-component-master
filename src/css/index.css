@@ -4,19 +4,44 @@ html {
 
 body{
   background-color: var(--light-grayish-blue);
+  font-family: "Manrope", sans-serif;
   font-size: 1.3rem;
 
 }
 
 .preview-component {
   max-width: 60rem;
+  margin: 20rem auto;
+  overflow: hidden;
+  border-radius: 1rem;
   border: 1px solid red;
 
   display: flex;
+  gap: 2.5rem;
+}
+
+.preview-information-component .preview-information {
+  background-color: var(--light-grayish-blue);
+  padding: .5rem;
 }
 
 .preview-image {
-  width: 20em;
+  max-width: 100%;
+}
+
+.photo-user, .icon-share {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.preview-information-user {
+  display: flex;
+
+}
+
+.preview-information-user div{
+  display: flex;
+  flex-direction: column;
 }
 
 .attribution {
