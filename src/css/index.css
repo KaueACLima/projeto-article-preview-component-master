@@ -67,6 +67,8 @@ body {
 
 .preview-information-user .information-user p span{
   display: block;
+  color: #ccc;
+  border-button: 1px solid;
 
 }
 
