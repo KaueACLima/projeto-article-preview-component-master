@@ -2,53 +2,76 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   background-color: var(--light-grayish-blue);
   font-family: "Manrope", sans-serif;
   font-size: 1.3rem;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .preview-component {
-  max-width: 60rem;
-  margin: 20rem auto;
+  max-width: 90rem;
+
   overflow: hidden;
   border-radius: 1rem;
   border: 1px solid red;
 
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
-.preview-information-component .preview-information {
-  background-color: var(--light-grayish-blue);
-  padding: .5rem;
+.preview-image-component {
+  width: 100%;
 }
 
-.preview-image {
+.preview-image-component .preview-image {
   max-width: 100%;
 }
 
-.photo-user, .icon-share {
-  width: 3rem;
-  border-radius: 50%;
+.preview-information-component {
+  background-color: var(--light);
+  padding: 3rem;
+}
+
+.preview-information-component .preview-information .title {
+  font-size: 2.5rem;
+  color: var(--very-dark-grayish-blue);
+  margin-bottom: 2rem;
+}
+
+.preview-information-component .preview-information p {
+  color: var(--very-dark-grayish-blue);
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-information-component .preview-information span {
+  display: block;
 }
 
 .preview-information-user {
   display: flex;
-
+  justify-content: space-between;
 }
 
-.preview-information-user div{
+.preview-information-user .information-user {
   display: flex;
-  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+
+.preview-information-user .information-user p span{
+  display: block;
+
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.preview-information-user .photo-user,
+.preview-information-user  .icon-share {
+  width: 2.5rem;
+  border-radius: 50%;
 }
