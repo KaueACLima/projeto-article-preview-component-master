@@ -11,22 +11,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .preview-component {
   max-width: 90rem;
-
-  overflow: hidden;
   border-radius: 1rem;
   border: 1px solid red;
+  overflow: hidden;
 
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
-.preview-image-component {
-  width: 100%;
+.preview-image-component,
+.preview-information-component {
+  width: 45rem;
+  height: 35rem;
 }
 
 .preview-image-component .preview-image {
@@ -34,24 +34,25 @@ body {
 }
 
 .preview-information-component {
-  background-color: var(--light);
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2.5rem;
+}
+
+.preview-information-component .preview-information {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .preview-information-component .preview-information .title {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--very-dark-grayish-blue);
-  margin-bottom: 2rem;
 }
 
-.preview-information-component .preview-information p {
-  color: var(--very-dark-grayish-blue);
-  font-size: 1.6rem;
-  margin-bottom: 1.5rem;
-}
-
-.preview-information-component .preview-information span {
-  display: block;
+.preview-information-component p {
+  color: var(--desaturated-dark-blue);
 }
 
 .preview-information-user {
@@ -61,23 +62,25 @@ body {
 
 .preview-information-user .information-user {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-
-.preview-information-user .information-user p span{
-  display: block;
-  color: #ccc;
-  border-button: 1px solid;
-  font-size: 2.5rem:
-  background-color: #ffff00;
-  text-decoration: underline;
+.preview-information-user .information-user div span {
+  color: var(--very-dark-grayish-blue);
   font-weight: bold;
-
 }
 
-.preview-information-user .photo-user,
-.preview-information-user  .icon-share {
-  width: 2.5rem;
+.preview-information-user .information-user .photo-user,
+.preview-information-user .icon-share {
   border-radius: 50%;
+}
+
+.preview-information-user .information-user .photo-user {
+  width: 4rem;
+  height: 4rem;
+}
+
+.preview-information-user .icon-share {
+  width: 3rem;
+  height: 3rem;
 }
