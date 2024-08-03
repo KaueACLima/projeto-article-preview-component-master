@@ -63,6 +63,7 @@ body {
 .preview-information-user .information-user {
   display: flex;
   gap: 2rem;
+  border-radius: 3rem;
   border: 1px solid red;
 }
 
