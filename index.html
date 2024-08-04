@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
 
@@ -18,52 +17,64 @@
 </head>
 
 <body>
-  <main class="preview-component">
 
-    <section class="preview-image-component">
+  <article class="article-card">
 
-      <img class="preview-image" src="./src/images/drawers.jpg" alt="Image drawers">
+    <div class="img-box">
+      <img class="article-banner" src="./src/images/drawers.jpg" alt="Image Deawers">
+    </div>
 
-    </section>
+    <div class="article-contet">
 
-    <section class="preview-information-component">
-
-      <article class="preview-information">
-        <h1 class="title">
+      <a href="#">
+        <h3 class="article-title">
           Shift the overall look and feel by adding these wonderful
           touches to furniture in your home
-        </h1>
+        </h3>
+      </a>
 
-        <p>
-          <span>Ever been in a room and felt like something was missing?</span> Perhaps
-          it felt slightly bare and uninviting. I’ve got some simple tips
-          to help you make any room feel complete.
-        </p>
-      </article>
+      <p class="article-text">
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
+    </div>
 
-      <article class="preview-information-user">
+    <div class="article-content-footer">
 
-        <div class="information-user">
-          <img class="photo-user" src="./src/images/avatar-michelle.jpg" alt="Photo Michelle">
-          <div>
+      <div class="author">
+        <img class="author-avatar" src="./src/images/avatar-michelle.jpg" alt="Photo Michelle">
+      </div>
 
-            <p>
-              <span>
-                Michelle Appleton
-              </span>
-            </p>
+      <div class="author-info">
 
-            <p>
-              28 Jun 2020
-            </p>
-          </div>
+        <a href="#">
+          <h4 class="author-name">
+            Michelle Appleton
+          </h4>
+        </a>
+      </div>
+
+      <div class="publish-date">
+        28 Jun 2020
+      </div>
+
+      <div class="share">
+
+        <button class="share-button">
+          <img class="icon-share" src="./src/images/icon-share.svg" alt="Icon share">
+        </button>
+
+        <div class="share-options .active">
+          <a href="#">
+            <img src="./src/images/icon-facebook.svg" alt="Iconn facebook">
+            <img src="./src/images/icon-twitter.svg" alt="Iconn twitter">
+            <img src="./src/images/icon-pinterest.svg" alt="Iconn pinterest">
+          </a>
         </div>
-        <img class="icon-share" src="./src/images/icon-share.svg" alt="Icon share">
-
-
-      </article>
-    </section>
-  </main>
+      </div>
+    </div>
+  </article>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

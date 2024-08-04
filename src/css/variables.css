@@ -4,4 +4,6 @@
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
   --light: hsla(210, 12%, 97%, 0.897);
+
+  --fs-13: 1.3rem;
 }
