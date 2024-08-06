@@ -136,4 +136,5 @@ body {
 .share-options .active {
   --scale: 1;
   visibility: visible;
+  color: white;
 }
