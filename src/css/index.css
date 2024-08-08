@@ -138,4 +138,5 @@ body {
   visibility: visible;
   color: white;
   background: gray;
+  padding: none;
 }
