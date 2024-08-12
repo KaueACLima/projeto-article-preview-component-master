@@ -142,4 +142,5 @@ body {
   margin: 0;
   width: 23px;
   hight: 23px;
+  border: 1px solid red;
 }
