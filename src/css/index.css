@@ -136,6 +136,7 @@ body {
 .share-options .active {
   --scale: 1;
   visibility: visible;
+  
   color: white;
   background: gray;
   padding: none;
@@ -143,4 +144,5 @@ body {
   width: 23px;
   hight: 23px;
   border: 1px solid red;
+  position: relative;
 }
