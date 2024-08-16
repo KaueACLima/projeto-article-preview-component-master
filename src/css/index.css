@@ -1,4 +1,4 @@
-html {
+ html {
   font-family: "Manrope", sans-serif;
   font-size: 62.5%;
   font-weight: 500;
@@ -146,4 +146,5 @@ body {
   border: 1px solid red;
   position: relative;
   line-height: 10px;
+  overdlow: hidden;
 }
