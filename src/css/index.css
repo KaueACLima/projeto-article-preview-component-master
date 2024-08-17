@@ -147,4 +147,5 @@ body {
   position: relative;
   line-height: 10px;
   overdlow: hidden;
+  text-transform: uppercase;
 }
