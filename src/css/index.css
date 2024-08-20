@@ -150,4 +150,5 @@ body {
   text-transform: uppercase;
   border: 1px solid red;
   color: gray;
+  width: 10px;
 }
