@@ -1,13 +1,13 @@
- html {
+html {
   font-family: "Manrope", sans-serif;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   font-weight: 500;
 
 }
 
 body {
   min-height: 100vh;
-  padding: 2rem;
+  padding: 20px;
 
   background-color: var(--light-grayish-blue);
 
@@ -15,12 +15,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .article-card {
   display: grid;
-  grid-template-columns: 28.5rem minmax(30rem, 44.5rem);
-  max-width: 73rem;
-  border-radius: 1rem;
+  grid-template-columns: 285px minmax(300px, 445px);
+  max-width: 730px;
+  border-radius: 10px;
 
   box-shadow: 6px 6px 5px hlsa(0, 0%, 0%, .2),
               25px 25px 20px hlsa(0, 0%, 0%, .3),
@@ -28,7 +27,7 @@ body {
 }
 
 .img-box {
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 10px 0 0 10px;
   overflow: hidden;
 }
 
@@ -37,28 +36,34 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: left;
-  transition: all .5 ease;
+  transition: all .5s ease;
 }
 
 .article-card:hover .article-banner{ transform: scale(1.1); }
 
 .article-contet {
   background-color: var(--white);
-  padding: 3.2rem 4rem;
-  border-radius: 0 1rem 1rem 0;
+  padding: 32px 40px;
+  border-radius: 0 10px 10px 0;
+}
+
+.article-contet {
+  background-color: var(--white);
+  padding: 32px 40px;
+  border-radius: 0 10px 10px 0;
 }
 
 .article-title {
-  font-size: 2rem;
+  font-size: 20px;
   color: var(--very-dark-grayish-blue);
-  margin-bottom: 1.2rem;
+  margin-bottom: 12px;
   line-height: 1.4;
 }
 
 .article-text {
   font-size: var(--fs-13);
   color: var(--desaturated-dark-blue);
-  margin-bottom: 1.8rem;
+  margin-bottom: 18px;
   line-height: 1.5;
 }
 
@@ -74,10 +79,10 @@ body {
 }
 
 .author-avatar {
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  margin-right: 1.5rem;
+  margin-right: 15px;
 }
 
 .author-name {
@@ -94,9 +99,9 @@ body {
 
 .share-button {
   background: var(--light-grayish-blue);
-  padding: .6rem;
-  border-radius: 2rem;
-  font-size: 2rem;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 20px;
   color: var(--desaturated-dark-blue);
   transition: all .25s ease;
 }
@@ -106,51 +111,64 @@ body {
   background: var(--desaturated-dark-blue);
 }
 
-.share-options {
+.share-option {
   /* 
   * variable for transforming `.share-option` box
   * without reapeat all transform value
    */
 
-   --scale: 0
-   --translateX: -50%;
+   --scale: 0;
+   --translateX: 50%;
    --translateY: 0;
 
    background: var(--very-dark-grayish-blue);
    position: absolute;
-   bottom: calc(100% + 2.8rem);
-   left: 50%;
-   transform: translate(var(--translateX), var(--translateY) scale(--scale));
+   display: block;
+   bottom: calc(100% + 28px);
 
+   transform: translate(var(--translateX), var(--translateY)) scale(--scale);
+   left: 5 0%;
    display: flex;
    align-items: center;
-   gap: 1.2rem;
-   padding: 1.7rem 4rem;
-   border-radius: 1rem;
-   box-shadow: 0 5px 20px -5px;
+   gap: 12px;
+   padding: 17px 40px;
+   border-radius: 10px;
+   box-shadow: 0 5px 20px -5px #0003;
    transform-origin:  bottom;
    visibility: hidden;
    transition: all .25s ease;
 }
 
-.share-options .active {
+.share-option.active {
   --scale: 1;
   visibility: visible;
-  
-  color: white;
-  background: gray;
-  padding: none;
-  margin: 0;
-  width: 23px;
-  hight: 23px;
-  border: 1px solid red;
-  position: relative;
-  line-height: 10px;
-  overdlow: hidden;
-  text-transform: uppercase;
-  border: 1px solid red;
-  color: gray;
-  width: 10px;
-  margin: 1px;
-  display: none;
 }
+
+.share-option::after {
+  content: '';
+  background: var(--very-dark-grayish-blue);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+.share-option span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--grayish-blue);
+  margin-right: 5px;
+}
+
+.share-option a i {
+  font-size: 22px;
+  color: var(--white);
+}
+
+.share-option a:hover, .article-title:hover, .author-name:hover {
+  filter: invert(1);
+}
+
