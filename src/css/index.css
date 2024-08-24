@@ -41,13 +41,13 @@ body {
 
 .article-card:hover .article-banner{ transform: scale(1.1); }
 
-.article-contet {
+.article-content {
   background-color: var(--white);
   padding: 32px 40px;
   border-radius: 0 10px 10px 0;
 }
 
-.article-contet {
+.article-content {
   background-color: var(--white);
   padding: 32px 40px;
   border-radius: 0 10px 10px 0;
@@ -65,12 +65,14 @@ body {
   color: var(--desaturated-dark-blue);
   margin-bottom: 18px;
   line-height: 1.5;
+  
 }
 
 .article-content-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .author {
@@ -127,7 +129,7 @@ body {
    bottom: calc(100% + 28px);
 
    transform: translate(var(--translateX), var(--translateY)) scale(--scale);
-   left: 5 0%;
+   left: 50%;
    display: flex;
    align-items: center;
    gap: 12px;
@@ -151,7 +153,7 @@ body {
   height: 20px;
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 15%;
   transform: translate(-50%, -60%) rotate(45deg);
 }
 

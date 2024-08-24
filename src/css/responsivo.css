@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+  :root {
+    /** Tipografia */
+    --fs-13: 12px;
+  }
+
+  /** Article Card Responsive */
+  .article-card {
+    grid-template-columns: 1fr;
+    max-width: 294px;
+    overflow: hidden;
+  }
+
+  .img-box, .article-contet { border-radius: 0; }
+
+  .img-box { height: 180px; }
+
+  .article-contet { padding: 30px 28px 20px; }
+
+  .article-title { font-size: 15px; }
+
+  .article-text { margin-bottom: 30px; }
+
+  .article-content-footer { position: relative; }
+
+  .author-avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .share {
+    position: static;
+    z-index: 1;
+  }
+
+  .share-button { font-size: 16px; }
+
+  .share-option {
+    /** variable for tranforming `.share-option` box */
+    /** without reapeating all tranfrom value */
+
+    --scale: 1;
+    --translateX: 0;
+    --translateY: 100%;
+
+    inset: -20px -28px;
+    border-radius: 0;
+    padding: 17px 30px;
+    z-index: -1;
+  }
+
+  .share-option.active { --translateY: 0; }
+}
+
