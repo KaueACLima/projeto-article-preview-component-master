@@ -15,7 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Acesse o projeto finalizado, online](https://github.com/KaueACLima/projeto-article-preview-component-master)
 
-- [Acesse o portifólio finalizado](#)
+- [Acesse o portifólio finalizado](https://kaueaclima.github.io/projeto-article-preview-component-master/)
 
 ## :memo: Licença
 
